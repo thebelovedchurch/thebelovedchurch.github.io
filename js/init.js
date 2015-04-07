@@ -19,7 +19,6 @@ SC.initialize({
 });
 
 splitOnBar = function(s, d){
-  console.log("s" + s + "  d" + d);
   var splitTitle = s.split("|");
   if (splitTitle.length == 2) return splitTitle;
   if (d == null || d == "") d = "&nbsp;";
