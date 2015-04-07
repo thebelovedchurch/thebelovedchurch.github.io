@@ -21,7 +21,7 @@ SC.initialize({
 splitOnBar = function(s, d){
   var splitTitle = s.split("|");
   if (splitTitle.length == 2) return splitTitle;
-  if (d == null || d == "") d = " ";
+  if (d == null || d == "") d = "&nbsp;";
   return [s,d];
 }
 
