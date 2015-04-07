@@ -11,7 +11,7 @@
 var play_html = '<div style="float: left; margin-right: 10px;"><i class="mdi-av-play-arrow" style="cursor: pointer;"></i></div>';
 var pause_html = '<div style="float: left; margin-right: 10px;"><i class="mdi-av-pause" style="cursor: pointer;"></i></div>';
 var download_html = '<div style="float: right; margin-left: 10px;"><i class="mdi-file-cloud-download" style="cursor: pointer;"></i></div>';
-var bar_html = '<div style="overflow: hidden; height: 16px;" class="teal lighten-4"></div>';
+var bar_html = '<div style="overflow: hidden; height: 4px;" class="teal lighten-4"></div>';
 var inside_bar_html = '<div style="height: 100%; width: 0;" class="teal"></div>';
 
 SC.initialize({
