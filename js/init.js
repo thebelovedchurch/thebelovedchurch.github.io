@@ -18,9 +18,11 @@ SC.initialize({
   client_id: 'e58500f22069ebf6de412ec63b4939b3'
 });
 
-splitOnBar = function(s,d){
+splitOnBar = function(s, d){
   var splitTitle = s.split("|");
-  return splitTitle.length == 2 ? splitTitle : [s,d];
+  if (splitTitle.length == 2) return splitTitle;
+  if (d == null || d == "") d = " ";
+  return [s,d];
 }
 
 // stream track id 293
