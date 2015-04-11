@@ -29,7 +29,7 @@ splitOnBar = function(s, d){
 $(document).ready(function(){
   
 
-  SC.get('/playlists/51633482', function(playlist) {
+  SC.get('/playlists/52692751', function(playlist) {
     if (playlist.tracks.length < 6){
       $('#tracks1').parent().addClass("col-sm-offset-3")
                    .removeClass("sm-50px-padding-right")
