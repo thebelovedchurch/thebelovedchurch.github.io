@@ -96,3 +96,7 @@ footer.page-footer {
     margin-top: 40px;
     margin-bottom: 20px;
   }
+
+.give-icon:before {
+  content: "\e69c";
+}
