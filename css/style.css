@@ -63,3 +63,31 @@ footer.page-footer {
   text-shadow: 0 0 8px #000000;
 }
 
+.collapsible-body > ul
+,.collapsible-body > ul > li{
+  line-height: 1.5rem;
+  list-style-type: disc;
+}
+
+.collapsible-body > ul {
+  padding-left: 40px;
+}
+
+.collapsible-body > p {
+  padding: 0rem;
+  line-height: 1.5rem;
+}
+
+.collapsible-body {
+  padding: 1rem;
+  background-color: rgba(255,255,255,.75);
+  color: black;
+  text-align: left;
+}
+
+.staff-img {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
