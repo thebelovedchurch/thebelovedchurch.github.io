@@ -50,6 +50,11 @@ nav ul a {
   }
 }
 
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 
 .icon-block {
   padding: 0 15px;
