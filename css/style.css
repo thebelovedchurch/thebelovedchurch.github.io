@@ -100,3 +100,7 @@ footer.page-footer {
 .give-icon:before {
   content: "\e69c";
 }
+
+.parallax > img {
+  min-width: 750px;
+}
