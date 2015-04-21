@@ -18,7 +18,9 @@ nav ul a {
   font-size: 1.1rem;
 }
 
-
+.side-nav a {
+  width: 100%;
+}
 
 .button-collapse {
   color: #26a69a;
