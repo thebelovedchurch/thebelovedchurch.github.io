@@ -9,7 +9,7 @@
 
 nav ul a,
 nav a,
-h5,h4 {
+h5,h4,h3,h2 {
   font-family: "BebasNeueRegular";
   letter-spacing: .1rem;
 }
@@ -68,6 +68,10 @@ footer.page-footer {
 
 .fog {
   text-shadow: 0 0 8px #000000;
+}
+
+.fog-white {
+  text-shadow: 0 0 8px #ffffff;
 }
 
 .collapsible-body > ul
