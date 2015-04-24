@@ -7,6 +7,12 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+$.get("http://announcementeditor-thebelovedchurch.rhcloud.com/storage/?campus=University%20Village", function(data){
+  $(data).each(function(i,e){
+    $('#announcements').append('<div style="color: #606060"><strong>' + e.title + '</strong><p class="not-bold">' + e.body + '</p></div>');
+  });
+});
+
 
 var play_html = '<div style="float: left; margin-right: 10px;"><i class="mdi-av-play-arrow" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
 var pause_html = '<div style="float: left; margin-right: 10px;"><i class="mdi-av-pause" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
