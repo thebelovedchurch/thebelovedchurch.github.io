@@ -18,6 +18,10 @@ nav ul a {
   font-size: 1.1rem;
 }
 
+.container {
+  padding: 0;
+}
+
 .side-nav a {
   width: 100%;
 }
