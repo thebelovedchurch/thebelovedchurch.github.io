@@ -78,6 +78,10 @@ footer.page-footer {
   text-shadow: 0 0 8px #ffffff;
 }
 
+.fog-off-white {
+  text-shadow: 0 0 8px #ffeedd;
+}
+
 .collapsible-body > ul
 ,.collapsible-body > ul > li{
   line-height: 1.5rem;

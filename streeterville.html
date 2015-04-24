@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Church of the Beloved - Template</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+  <link href="css/font-awesome.css" type="text/css" rel="stylesheet"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body id="verytop">
+  <div class="navbar-fixed">
+    <nav class="grey darken-4" role="navigation" >
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#verytop" class="brand-logo" style="top: 0; transform: translate(0,0); -webkit-transform: translate(0,0);">
+        <object type="image/svg+xml" width="80" data="img/logo_white.svg" style="margin-top: 12px;pointer-events: none;">Your browser does not support SVG</object></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#sermons">Sermons</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#give">Give</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#sermons">Sermons</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#staff">Staff</a></li>
+          <li><a href="#give">Give</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu white-text"></i></a>
+      </div>
+    </nav>
+  </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section">
+      <h1>&nbsp;</h1>
+    
+          
+          <div class="right-align" style="width: 19rem;margin: 0 auto">
+            <h4 class="fog right-align" style="margin: 0">Church of the Beloved</h4>
+            <h2 class="fog right-align" style="margin: 0">Streeterville</h2>
+          </div>
+                   
+      
+      <h1>&nbsp;</h1>
+    </div>
+    <div class="parallax"><img src="img/streeterville/streeterville.jpg" ></div>
+  </div>
+
+
+  <div class="container" id="visit">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center red-text text-lighten-2"><i class="mdi-maps-place"></i></h2>
+            <h5 class="center">Time & Location</h5>
+
+            <p class="center-align">Sunday 10:30 AM at Thorne Auditorium, 
+375 E. Chicago Ave Chicago IL 60611</p>
+            <br />
+            <div style="width: 100%; text-align:center">
+              <a href="https://goo.gl/maps/JzWs0" class="waves-effect waves-light btn red lighten-2" style="width: 16rem">Direction and Map</a>
+            </div>
+            <br />
+            <div style="width: 100%; text-align:center">
+              <a href="#parkingmodal" class="waves-effect waves-light btn red lighten-2 modal-trigger" style="width: 16rem" >Parking Information</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center red-text text-lighten-2"><i class="mdi-notification-event-note"></i></h2>
+            <h5 class="center">Events and Notifications</h5>
+
+            <div id="announcements"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+ <!-- Modal Structure -->
+  <div id="parkingmodal" class="modal">
+    <div class="modal-content">
+      <h4>Parking Information</h4>
+      <p>Street Parking can be found on Chicago Ave and in the surrounding area. The meters are $4/hour. Church of the Beloved visitors may park at 321 E. Erie for 10 hours for $10.25. Validation stickers will be available at the welcoming table.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
+
+
+
+  <div class="parallax-container valign-wrapper">
+    
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light fog">We exist to see the Gospel transform people into Spirit-filled disciples, who know they are the beloved of God, because of Christ alone.</h5>
+        </div>
+      </div>
+    
+    <div class="parallax"><img src="img/streeterville/COTB-Launch-39.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container" id="sermons">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h4>Sermons</h4>
+          <p class="center-align light">
+            Feel free to check out our sermons or catch up on our latest sermon series. <br />
+      		Looking for past sermons? Click <a href="https://soundcloud.com/church-of-the-beloved">here</a>.
+      	  </p>
+        </div>
+      </div>
+    
+
+      <div class="row">
+
+        <div class="col s12 m6">
+          <div id="tracks1"></div>
+        </div>
+      
+        <div class="col s12 m6">
+          <div id="tracks2"></div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container hide-on-med-and-down">
+
+      <div id="mission" style="padding: 1rem;margin:0 auto;max-width:1000px;">
+        
+        <h1>&nbsp;</h1>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header black-text center-align">Mission Statement</div>
+            <div class="collapsible-body"><p>We exist to see the Gospel transform people into Spirit-filled disciples, who know they are the beloved of God, because of Christ alone.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text center-align">What We Believe</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>We have accepted Jesus Christ as personal Lord  and Savior (John 1:12).</li>
+                <li>We believe that the Bible, though written by  man, was inspired by God (2 Tim. 3:16; 2 Pet. 1:20-21) and thus is God's  perfect revelation (2 Sam. 22:31; Ps. 12:6) of the truth that underlies our  faith (Acts 17:11: Mark 12:24).</li>
+                <li>We believe in one God, master and creator of the  universe (I Cor. 8:5-6), who reveals Himself as three distinct persons, Father,  Son, and Holy Spirit (Matt. 28:19; John 14:26, Eph. 3:14-17).</li>
+                <li>We believe that Jesus was fully human and fully  divine (Phil. 2:6-8; Col. 1:15, 2:9) and lived a sinless life (2 Cor. 5:21;  Heb. 4:15), perfectly revealing God (John 1:14; Heb. 1:3).</li>
+                <li>We believe that all men and women are separated  from God by their sin (Rom. 3:10, 23) but can be reconciled to God through  Jesus' death on the cross, the perfect and only acceptable sacrifice for  people's sins (1 Peter 3:18; Heb. 10:14; 1 Tim. 2:5-6).</li>
+                <li>We believe that people must put their trust in  Jesus Christ alone (Eph. 2:8-9; John 14:6; John 3:16) as their personal Lord  and Savior in order to receive eternal life, which includes an eternal home in  Heaven (John 14:1-6; Rev. 7:9, 21:1-5); those who die in their sin without  Christ face an eternity of punishment in hell (Matt. 23:15, 33; Rev. 20:15).</li>
+                <li>We believe in the Holy Spirit of God that  indwells believers upon conversion (Rom. 8:9, 15-16; John 14:16-17) to gift,  guide, and empower us for obedience and service.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text center-align">Vision</div>
+            <div class="collapsible-body">
+              <p><strong>God has given us a  dream...</strong></p>
+              <p>To be a community of the Gospel in both  proclamation and practice.</p>
+              <p>To be a people who are prayerful because we  acknowledge our dependence on the Spirit, and not on our own strengths and  gifts.</p>
+              <p>To be a community that understands the  statement, "Cheer up we are far worse than we think we are." And the  second statement, "Cheer up we are far more accepted than we could hope or  imagine." (Jack Miller: Sonship)</p>
+              <p>To be a community of grace, where we live out  the sentence from Luke 15:2, "This man welcomes sinners and eats with  them."</p>
+              <p>To have a passion for souls that have not yet  had the privilege of knowing they are the beloved of God because of Christ  alone.</p>
+              <p>To be a disciple making church, where every  staff is committed to equipping leaders of the church, so that they can  disciple others.</p>
+              <p>To be committed to a vision of the glory of God  spreading to all the ethno-linguistic peoples of the world.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text center-align">Core Values</div>
+            <div class="collapsible-body">
+              <p><strong>The Gospel</strong>:          The  'gospel' is the good news that through Christ the power of God's kingdom has  entered history to renew the whole world. When we believe and rely on Jesus'  work and record (rather than ours) for our relationship to God, that kingdom  power comes upon us and begins to work through us.&nbsp;</p>
+              <p>
+                The Gospel changes people from the inside out.  Christ gives us a radically new identity, freeing us from both  self-righteousness and self-condemnation. He liberates us to accept people we  once excluded, and to break the bondage of things (even good things) that once  drove us. The gospel makes us welcoming and respectful toward those who are  different from us.&nbsp; 
+              </p>
+              <p> The Gospel is for both believers and unbelievers.  It is also both personal and collective in its scope.&nbsp;</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text center-align">Foundations of Ministry</div>
+            <div class="collapsible-body">
+              <p><strong>Church of  the Beloved believes in five foundational pillars of the biblical church:</strong><strong> </strong></p>
+              <p><strong>Worship &amp; Prayer:</strong> Our church is committed to genuine, biblical  worship in the freedom of the Gospel. &nbsp;Songs of praise &amp; worship, time  for prayer, expository preaching of God’s Word, and the administration of the  Sacraments are foundational to the celebration of corporate worship we  experience. &nbsp;We believe that prayer is a primary means of grace through  which we express our dependence on God for everything. </p>
+              <p><strong>Fellowship &amp; Community: &nbsp;</strong>Our church seeks to  do life together the way the early church modeled community. &nbsp;We seek to  be intentional about sharing our lives with each other through encouragement,  generosity, speaking the word to one another, serving one another, confessing  sins to one another, praying, and building each other up toward Christ. &nbsp;We  will do this through small groups that will meet regularly. &nbsp;Fellowship  comes from a shared identity as children of God, a shared service and mission,  and a shared responsibility to one another. (adapted from John Stott.)</p>
+              <p><strong>Learning &amp; Discipleship: </strong>Our church is committed to making disciples  of Jesus and sending out leaders into the world. &nbsp;We will be intentional  as staff and leaders to investing time in discipling our members to become  disciple makers.</p>
+              <p><strong>Missions &amp; Evangelism: </strong>Our church will actively seek to proclaim and  practice the Gospel both in our local community and abroad. &nbsp;We will do  this through intercessory prayer, radical generosity, Christ exalting worship,  building relationships with people who are outside the church, training and  equipping our members to have a passion for the lost both here and in the  nations.</p>
+              <p><strong>Mercy &amp; Social Concern: </strong>Our church is committed to being a light to  the community around us. We want to impact the neighborhoods around us by  identifying felt needs in the community, and seeking to partner with existing  ministries to most effectively meet the needs of the community in sustainable  ways.</p>
+            </div>
+          </li>
+        </ul>
+        <h1>&nbsp;</h1>
+      </div>
+
+    <div class="parallax"><img src="img/streeterville/IMG_4116.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <div class="hide-on-large-only">
+      <h4 class="center-align black-text">Our Mission</h4>
+      <div id="mission" style="padding: 1rem;margin:0 auto;max-width:1000px;">
+        
+        
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header black-text center-align">Mission Statement</div>
+            <div class="collapsible-body"><p>We exist to see the Gospel transform people into Spirit-filled disciples, who know they are the beloved of God, because of Christ alone.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text center-align">What We Believe</div>
+            <div class="collapsible-body">
+              <ul>
+                <li>We have accepted Jesus Christ as personal Lord  and Savior (John 1:12).</li>
+                <li>We believe that the Bible, though written by  man, was inspired by God (2 Tim. 3:16; 2 Pet. 1:20-21) and thus is God's  perfect revelation (2 Sam. 22:31; Ps. 12:6) of the truth that underlies our  faith (Acts 17:11: Mark 12:24).</li>
+                <li>We believe in one God, master and creator of the  universe (I Cor. 8:5-6), who reveals Himself as three distinct persons, Father,  Son, and Holy Spirit (Matt. 28:19; John 14:26, Eph. 3:14-17).</li>
+                <li>We believe that Jesus was fully human and fully  divine (Phil. 2:6-8; Col. 1:15, 2:9) and lived a sinless life (2 Cor. 5:21;  Heb. 4:15), perfectly revealing God (John 1:14; Heb. 1:3).</li>
+                <li>We believe that all men and women are separated  from God by their sin (Rom. 3:10, 23) but can be reconciled to God through  Jesus' death on the cross, the perfect and only acceptable sacrifice for  people's sins (1 Peter 3:18; Heb. 10:14; 1 Tim. 2:5-6).</li>
+                <li>We believe that people must put their trust in  Jesus Christ alone (Eph. 2:8-9; John 14:6; John 3:16) as their personal Lord  and Savior in order to receive eternal life, which includes an eternal home in  Heaven (John 14:1-6; Rev. 7:9, 21:1-5); those who die in their sin without  Christ face an eternity of punishment in hell (Matt. 23:15, 33; Rev. 20:15).</li>
+                <li>We believe in the Holy Spirit of God that  indwells believers upon conversion (Rom. 8:9, 15-16; John 14:16-17) to gift,  guide, and empower us for obedience and service.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text center-align">Vision</div>
+            <div class="collapsible-body">
+              <p><strong>God has given us a  dream...</strong></p>
+              <p>To be a community of the Gospel in both  proclamation and practice.</p>
+              <p>To be a people who are prayerful because we  acknowledge our dependence on the Spirit, and not on our own strengths and  gifts.</p>
+              <p>To be a community that understands the  statement, "Cheer up we are far worse than we think we are." And the  second statement, "Cheer up we are far more accepted than we could hope or  imagine." (Jack Miller: Sonship)</p>
+              <p>To be a community of grace, where we live out  the sentence from Luke 15:2, "This man welcomes sinners and eats with  them."</p>
+              <p>To have a passion for souls that have not yet  had the privilege of knowing they are the beloved of God because of Christ  alone.</p>
+              <p>To be a disciple making church, where every  staff is committed to equipping leaders of the church, so that they can  disciple others.</p>
+              <p>To be committed to a vision of the glory of God  spreading to all the ethno-linguistic peoples of the world.</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text center-align">Core Values</div>
+            <div class="collapsible-body">
+              <p><strong>The Gospel</strong>:          The  'gospel' is the good news that through Christ the power of God's kingdom has  entered history to renew the whole world. When we believe and rely on Jesus'  work and record (rather than ours) for our relationship to God, that kingdom  power comes upon us and begins to work through us.&nbsp;</p>
+              <p>
+                The Gospel changes people from the inside out.  Christ gives us a radically new identity, freeing us from both  self-righteousness and self-condemnation. He liberates us to accept people we  once excluded, and to break the bondage of things (even good things) that once  drove us. The gospel makes us welcoming and respectful toward those who are  different from us.&nbsp; 
+              </p>
+              <p> The Gospel is for both believers and unbelievers.  It is also both personal and collective in its scope.&nbsp;</p>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header black-text center-align">Foundations of Ministry</div>
+            <div class="collapsible-body">
+              <p><strong>Church of  the Beloved believes in five foundational pillars of the biblical church:</strong><strong> </strong></p>
+              <p><strong>Worship &amp; Prayer:</strong> Our church is committed to genuine, biblical  worship in the freedom of the Gospel. &nbsp;Songs of praise &amp; worship, time  for prayer, expository preaching of God’s Word, and the administration of the  Sacraments are foundational to the celebration of corporate worship we  experience. &nbsp;We believe that prayer is a primary means of grace through  which we express our dependence on God for everything. </p>
+              <p><strong>Fellowship &amp; Community: &nbsp;</strong>Our church seeks to  do life together the way the early church modeled community. &nbsp;We seek to  be intentional about sharing our lives with each other through encouragement,  generosity, speaking the word to one another, serving one another, confessing  sins to one another, praying, and building each other up toward Christ. &nbsp;We  will do this through small groups that will meet regularly. &nbsp;Fellowship  comes from a shared identity as children of God, a shared service and mission,  and a shared responsibility to one another. (adapted from John Stott.)</p>
+              <p><strong>Learning &amp; Discipleship: </strong>Our church is committed to making disciples  of Jesus and sending out leaders into the world. &nbsp;We will be intentional  as staff and leaders to investing time in discipling our members to become  disciple makers.</p>
+              <p><strong>Missions &amp; Evangelism: </strong>Our church will actively seek to proclaim and  practice the Gospel both in our local community and abroad. &nbsp;We will do  this through intercessory prayer, radical generosity, Christ exalting worship,  building relationships with people who are outside the church, training and  equipping our members to have a passion for the lost both here and in the  nations.</p>
+              <p><strong>Mercy &amp; Social Concern: </strong>Our church is committed to being a light to  the community around us. We want to impact the neighborhoods around us by  identifying felt needs in the community, and seeking to partner with existing  ministries to most effectively meet the needs of the community in sustainable  ways.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="container" id="staff">
+    <div class="section">
+      <h4 class="center-align black-text">Meet Our Staff</h4>
+      <div class="row">
+        <div class="col s12 m6">
+          <img src="img/streeterville/davenew.png" class="staff-img">
+          <h4>DAVID CHOI<span class="grey-text"> LEAD PASTOR</span></h4>
+          <p>
+           Pastor David Choi has ministered in many diverse contexts from Asian churches to multiethnic, inner city churches to overseas missions. Pastor Dave graduated from both Wheaton College and Gordon-Conwell Theological Seminary.<br/><br/>He has been an active member of the Lausanne Movement for World Evangelization, a global congress of thousands of leaders from almost every country in the world.  Pastor Dave participated in the Lausanne Congress in Cape Town, South Africa, in 2010, the most diverse gathering of evangelical leaders in the history of the church.  He is an international speaker, having spoken in countries throughout the world. He has also spoken in many top universities like Cornell, the University of Chicago, MIT, Wheaton, and Harvard.<br/><br/>In his spare time, he enjoys being with close friends, rooting for the six time Super Bowl champion Pittsburgh Steelers, and meeting ex NBA players like Michael Jordan and Magic Johnson.
+          </p>
+        </div>
+
+        <div class="col s12 m6">
+          <img src="img/streeterville/gracenew256.png" class="staff-img">
+          <h4>GRACE KIM<span class="grey-text"> STAFF INTERN</span></h4>
+          <p>
+            Grace Kim graduated from Wheaton with a Masters in Evangelism and Leadership. When she read Hosea during her time at Florida State University, she surrendered her life to full-time ministry.<br/><br/>She became involved with Every Nation Campus Ministries and led a youth group at Tallahassee Korean Baptist Church for 3 years before going to seminary and Wheaton. She served with Latin America Mission as a Missions Coach in Mexico City and in Miami during 2012 until God led her to serve with The Church of the Beloved as a staff intern.<br/><br/>
+          Grace finds energy in being with people, learning about other cultures, and laughing. She’s a kid at heart and sees adventure in everything.
+          </p>
+        </div>        
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <img src="img/streeterville/eli256.png" class="staff-img">
+          <h4>ELISABET LA TORRE NOEL<span class="grey-text"> STAFF INTERN</span></h4>
+          <p>
+            Daniel Schwamm is a student at Moody Bible Institute studying Biblical Exposition. He spent two years serving in evangelism with Open Air Campaigners in New Zealand ministering through street preaching, children’s ministry, speaking at youth camps and churches, as well as training and equipping Christians to share the gospel. He has a passion to serve fellow Christians in order to see them grow to maturity in their faith and be equipped to make disciples.
+          </p>
+        </div>
+
+        <div class="col s12 m6">
+          <img src="img/streeterville/daniel256.png" class="staff-img">
+          <h4>DANIEL SCHWAMM<span class="grey-text"> STAFF INTERN</span></h4>
+          <p>
+            Hanqi Huang studied Biblical Studies at Moody Bible with aims of teaching and preaching in a foreign context. One of Hanqi's passions is to teach people how to read the Bible and understand it's most fundamental message of grace through the life and work of Christ. Since having received God's immense grace in high school, Hanqi has worked towards growing together in understanding and living out that reality.During his time at Moody, he cultivated a burgeoning desire to minister to people in Europe having spent some time traveling in Europe, and hopes one day to minister there.
+          </p>
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer red-lighten-1">
+    <div class="container" id="give">
+      <h4 class="center-align white-text">Give</h4>
+  
+        <p class="grey-text text-lighten-4 center-align">
+        	One of our greatest needs as a church plant is for financial partners who will invest into the Kingdom vision.<br />
+        	Please prayerfully consider supporting us as missionaries to Chicago!
+        </p>
+    
+        <form name="PrePage" method="post" action="https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx" target="_blank">  
+
+          <input type="hidden" name="LinkId" value ="fcdc9efe-0da5-43e5-b24f-112fc080b6ff" />
+          <div style="width:100%; text-align:center">
+          <button type="submit" style="background-color: transparent;border:none; font-size: 8rem">
+            <i class="mdi-action-wallet-giftcard"></i>
+          </button> <br />
+          <button type="submit" style="background-color: transparent;border:none;" class="white-text">
+            click to give
+          </button>
+          </div> 
+        </form>
+
+        <br />
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+
+          <div class="col s4 center-align white-text">
+            CONNECT
+            &nbsp;<a href="https://www.facebook.com/thebelovedchurch" class="white-text"><i class="fa fa-facebook"></i></a>
+<!--             &nbsp;<a href="https://twitter.com/BelovedChurch" class="white-text"><i class="fa fa-twitter"></i></a>
+            &nbsp;<a href="https://plus.google.com/communities/105258206477095989524" class="white-text"><i class="fa fa-google-plus"></i></a> -->
+          </div>
+     
+          <div class="col s4 center-align">
+            <a href="mailto:grace.kim@thebelovedchurch.org" class="white-text">CONTACT</a>
+          </div>
+          
+          <div  class="col s4 center-align white-text">
+            &#169; 2014 CHURCH OF THE BELOVED
+          </div>
+
+      	</div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="http://connect.soundcloud.com/sdk.js"></script>
+  <script src="js/streeterville.js"></script>
+  </body>
+</html>
