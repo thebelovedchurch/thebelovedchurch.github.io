@@ -7,7 +7,7 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-$.get("http://announcementeditor-thebelovedchurch.rhcloud.com/storage/?campus=University%20Village", function(data){
+$.get("http://announcementeditor-thebelovedchurch.rhcloud.com/storage/?campus=Near%20West", function(data){
   $(data).each(function(i,e){
     $('#announcements').append('<div style="color: #606060"><strong>' + e.title + '</strong><p class="not-bold">' + e.body + '</p></div>');
   });

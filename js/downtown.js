@@ -8,7 +8,7 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
-$.get("http://announcementeditor-thebelovedchurch.rhcloud.com/storage/?campus=Streeterville", function(data){
+$.get("http://announcementeditor-thebelovedchurch.rhcloud.com/storage/?campus=Downtown", function(data){
   $(data).each(function(i,e){
     $('#announcements').append('<div style="color: #606060"><strong>' + e.title + '</strong><p class="not-bold">' + e.body + '</p></div>');
   });
