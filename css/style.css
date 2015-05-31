@@ -1,16 +1,19 @@
-
 @font-face {
-    font-family: 'BebasNeueRegular';
-    src: url('../font/bebas/bebasneueregular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Ostrich Sans';
+  src: url('../font/ostrich-sans/ostrich-sans-black.eot');
+  src: local('☺'),
+    url('../font/ostrich-sans/ostrich-sans-black.woff') format('woff'),
+    url('../font/ostrich-sans/ostrich-sans-black.ttf') format('truetype'),
+    url('../font/ostrich-sans/ostrich-sans-black.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
 }
 
 
 nav ul a,
 nav a,
 h4,h3,h2,.bebas {
-  font-family: "BebasNeueRegular";
+  font-family: "Ostrich Sans";
   letter-spacing: .1rem;
 }
 
