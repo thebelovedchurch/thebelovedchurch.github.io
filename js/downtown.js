@@ -81,3 +81,20 @@ $(document).ready(function(){
     });
   });
 });
+
+$('.collapsible-header').click(function(object){
+  $panel_headers = $('.collapsible-header');
+  
+
+  $panel_headers.not(object.target).removeClass('active').parent().removeClass('active');
+  $panel_headers.not(object.target).parent().children('.collapsible-body').stop(true,false).slideUp(
+    {
+      duration: 350,
+      easing: "easeOutQuart",
+      queue: false,
+      complete:
+        function() {
+          $(this).css('height', '');
+        }
+    });
+});
