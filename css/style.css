@@ -62,6 +62,10 @@ nav ul a {
   #index-banner .section {
     top: 0;
   }
+  .min-navbar {
+    margin-left:-1rem;
+    margin-top: 8px !important;
+  }
 }
 
 .section {
