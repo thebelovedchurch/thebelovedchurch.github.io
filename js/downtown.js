@@ -18,7 +18,7 @@ $.get("http://announcementeditor-thebelovedchurch.rhcloud.com/storage/?campus=Do
 var play_html = '<div style="float: left; margin-right: 10px;"><i class="mdi-av-play-arrow" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
 var pause_html = '<div style="float: left; margin-right: 10px;"><i class="mdi-av-pause" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
 var download_html = '<div style="float: right; margin-left: 10px;"><i class="mdi-file-cloud-download" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
-var youtube_html = '<div style="float: right; margin-left: 10px;"><i class="fa fa-youtube-play" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
+var youtube_html = '<div><i class="fa fa-youtube-play" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
 var bar_html = '<div style="overflow: hidden; height: 4px; margin-top: 1rem;" class="teal lighten-4"></div>';
 var inside_bar_html = '<div style="height: 100%; width: 0;" class="teal"></div>';
 
@@ -51,11 +51,14 @@ $(document).ready(function(){
       var pause = $(pause_html).appendTo(trackDiv);
       pause.hide();
       var download = $(download_html).appendTo(trackDiv);
-      var youtube = null;
-      console.log(e);
-      if (e.description !== null && e.description !== "") youtube = $(youtube_html).appendTo(trackDiv);
+      
       var bar = $(bar_html).appendTo(trackDiv);
       var inside_bar = $(inside_bar_html).appendTo(bar);
+      
+      var youtube = null;
+      console.log(e);
+      if (e.description !== null && e.description !== "") youtube = $(youtube_html).after(trackDiv);
+      
       SC.stream("/tracks/" + e.id, function(sound){
         var intrvl;
         play.click(function(){
