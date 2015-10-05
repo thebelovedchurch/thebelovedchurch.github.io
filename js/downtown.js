@@ -18,6 +18,7 @@ $.get("http://announcementeditor-thebelovedchurch.rhcloud.com/storage/?campus=Do
 var play_html = '<div style="float: left; margin-right: 10px;"><i class="mdi-av-play-arrow" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
 var pause_html = '<div style="float: left; margin-right: 10px;"><i class="mdi-av-pause" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
 var download_html = '<div style="float: right; margin-left: 10px;"><i class="mdi-file-cloud-download" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
+var youtube_html = '<div style="float: right; margin-left: 10px;"><i class="fa fa-youtube-play" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
 var bar_html = '<div style="overflow: hidden; height: 4px; margin-top: 1rem;" class="teal lighten-4"></div>';
 var inside_bar_html = '<div style="height: 100%; width: 0;" class="teal"></div>';
 
@@ -27,9 +28,8 @@ SC.initialize({
 
 splitOnBar = function(s, d){
   var splitTitle = s.split("|");
-  if (splitTitle.length == 2) return splitTitle;
-  if (d == null || d == "") d = "&nbsp;";
-  return [s,d];
+  splitTitle.youtube = d;
+  return splitTitle;
 }
 
 // stream track id 293
@@ -52,6 +52,8 @@ $(document).ready(function(){
       var pause = $(pause_html).appendTo(trackDiv);
       pause.hide();
       var download = $(download_html).appendTo(trackDiv);
+      var youtube = null;
+      if (e.youtube != null && e.youtube != "") youtube = $(youtube_html).appendTo(trackDiv);
       var bar = $(bar_html).appendTo(trackDiv);
       var inside_bar = $(inside_bar_html).appendTo(bar);
       SC.stream("/tracks/" + e.id, function(sound){
@@ -76,6 +78,9 @@ $(document).ready(function(){
         });
         download.click(function(){
           window.location = e.download_url + "?client_id=e58500f22069ebf6de412ec63b4939b3";
+        });
+        youtube.click(function(){
+          window.location = e.youtube;
         });
       });
     });
