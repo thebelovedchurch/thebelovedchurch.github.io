@@ -53,7 +53,8 @@ $(document).ready(function(){
       pause.hide();
       var download = $(download_html).appendTo(trackDiv);
       var youtube = null;
-      if (e.youtube != null && e.youtube != "") youtube = $(youtube_html).appendTo(trackDiv);
+      console.log(e);
+      if (e.youtube !== null && e.youtube !== "") youtube = $(youtube_html).appendTo(trackDiv);
       var bar = $(bar_html).appendTo(trackDiv);
       var inside_bar = $(inside_bar_html).appendTo(bar);
       SC.stream("/tracks/" + e.id, function(sound){
