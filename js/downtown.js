@@ -27,9 +27,8 @@ SC.initialize({
 });
 
 splitOnBar = function(s, d){
-  var splitTitle = s.split("|");
-  splitTitle.youtube = d;
-  return splitTitle;
+  
+  return s.split("|");
 }
 
 // stream track id 293
@@ -54,7 +53,7 @@ $(document).ready(function(){
       var download = $(download_html).appendTo(trackDiv);
       var youtube = null;
       console.log(e);
-      if (e.youtube !== null && e.youtube !== "") youtube = $(youtube_html).appendTo(trackDiv);
+      if (e.description !== null && e.description !== "") youtube = $(youtube_html).appendTo(trackDiv);
       var bar = $(bar_html).appendTo(trackDiv);
       var inside_bar = $(inside_bar_html).appendTo(bar);
       SC.stream("/tracks/" + e.id, function(sound){
@@ -81,7 +80,7 @@ $(document).ready(function(){
           window.location = e.download_url + "?client_id=e58500f22069ebf6de412ec63b4939b3";
         });
         if (youtube != null) youtube.click(function(){
-          window.location = e.youtube;
+          window.location = e.description;
         });
       });
     });
