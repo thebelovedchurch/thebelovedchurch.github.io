@@ -79,7 +79,7 @@ $(document).ready(function(){
         download.click(function(){
           window.location = e.download_url + "?client_id=e58500f22069ebf6de412ec63b4939b3";
         });
-        youtube.click(function(){
+        if (youtube != null) youtube.click(function(){
           window.location = e.youtube;
         });
       });
