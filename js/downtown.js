@@ -57,7 +57,7 @@ $(document).ready(function(){
       
       var youtube = null;
       console.log(e);
-      if (e.description !== null && e.description !== "") youtube = $(youtube_html).after(trackDiv);
+      if (e.description !== null && e.description !== "") youtube = $(youtube_html).insertAfter(trackDiv);
       
       SC.stream("/tracks/" + e.id, function(sound){
         var intrvl;
