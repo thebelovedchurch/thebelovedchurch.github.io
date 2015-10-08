@@ -28,11 +28,11 @@ $('.collapsible-header').click(function(object){
 
 
 
-// $.get("http://announcementeditor-thebelovedchurch.rhcloud.com/storage/?campus=Near%20West", function(data){
-//   $(data).each(function(i,e){
-//     $('#announcements').append('<div style="color: #606060"><strong>' + e.title + '</strong><p class="not-bold">' + e.body + '</p></div>');
-//   });
-// });
+$.get("http://announcementeditor-thebelovedchurch.rhcloud.com/storage/?campus=Albany%20Park", function(data){
+  $(data).each(function(i,e){
+    $('#announcements').append('<div style="color: #606060"><strong>' + e.title + '</strong><p class="not-bold">' + e.body + '</p></div>');
+  });
+});
 
 
 var play_html = '<div style="float: left; margin-right: 10px;"><i class="mdi-av-play-arrow" style="cursor: pointer; font-size: 1.5rem;"></i></div>';
