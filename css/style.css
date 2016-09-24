@@ -132,3 +132,9 @@ footer.page-footer {
 .parallax > img {
   min-width: 750px;
 }
+
+@media (max-width : 600px) {
+  .wrap {
+    line-height: 1.4;
+  }
+}
